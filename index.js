@@ -1,14 +1,14 @@
 const canvas = document.querySelector('canvas');
 const c = canvas.getContext('2d');
 
-canvas.width = 64 * 16;
-canvas.height = 64 * 9;
+canvas.width = 64 * 16; //1024
+canvas.height = 64 * 9; //576
 
 class Sprite {
   constructor({ position }) {
     this.position = position;
     this.image = new Image();
-    this.image.src = './img/bookshelf.png';
+    this.image.src = './img/pixel-shelf.png';
   }
   draw() {
     c.drawImage(this.image, this.position.x, this.position.y);
