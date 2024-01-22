@@ -9,7 +9,7 @@ class Sprite {
     this.loaded = false;
   }
   draw() {
-    if (!this.loaded) return; // check if image loaded
+    if (!this.loaded) return; // check if image loaded, if not return out
     c.drawImage(this.image, this.position.x, this.position.y);
   }
 }
